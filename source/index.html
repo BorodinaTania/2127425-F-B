@@ -21,7 +21,7 @@
       <nav class="header__navigation navigation">
 
         <a class="navigation__logo" href="#">
-          <img class="navigation__logo" src="#" width="65" height="20" alt="Логотип компании F&B">
+          <img class="navigation__logo" src="images/logo.svg" width="65" height="20" loading="lazy" alt="Логотип компании F&B">
         </a>
 
         <ul class="navigation__list list-reset">
@@ -71,8 +71,8 @@
           <li class="slider__item">
             <a class="slider__picture" href="#">
               <picture>
-                <source width="255" height="180" srcset="#" type="image/webp">
-                <img class="slider__image" src="#" srcset="#" width="255" height="180" loading="lazy" alt="Ветка с зелеными листьями">
+                <source width="223" height="120" srcset="images/slider-image-1@1x.webp, images/slider-image-1@2x.webp 2x" type="image/webp">
+                <img class="slider__image" src="images/slider-image-1@1x.png" srcset="images/slider-image-1@2x.png 2x" width="223" height="120" loading="lazy" alt="Ветка с зелеными листьями">
               </picture>
             </a>
             <h3 class="slider__title">Fig. 1 (plant)</h3>
@@ -82,8 +82,8 @@
           <li class="slider__item">
             <a class="slider__picture" href="#">
               <picture>
-                <source width="255" height="180" srcset="#" type="image/webp">
-                <img class="slider__image" src="#" srcset="#" width="255" height="180" loading="lazy" alt="Красный цветок">
+                <source width="197" height="120" srcset="images/slider-image-2@1x.webp, images/slider-image-2@2x.webp 2x" type="image/webp">
+                <img class="slider__image" src="images/slider-image-2@1x.png" srcset="images/slider-image-2@2x.png 2x" width="197" height="120" loading="lazy" alt="Красный цветок">
               </picture>
             </a>
             <h3 class="slider__title">Fig. 2 (flower)</h3>
@@ -93,8 +93,8 @@
           <li class="slider__item">
             <a class="slider__picture" href="#">
               <picture>
-                <source width="255" height="180" srcset="#" type="image/webp">
-                <img class="slider__image" src="#" srcset="#" width="255" height="180" loading="lazy" alt="Ораньжево-зеленый листок">
+                <source width="204" height="120" srcset="images/slider-image-3@1x.webp, images/slider-image-3@2x.webp 2x" type="image/webp">
+                <img class="slider__image" src="images/slider-image-3@1x.png" srcset="images/slider-image-3@2x.png 2x" width="204" height="120" loading="lazy" alt="Ораньжево-зеленый листок">
               </picture>
             </a>
             <h3 class="slider__title">Fig. 3 (leaf)</h3>
@@ -104,8 +104,8 @@
           <li class="slider__item">
             <a class="slider__picture" href="#">
               <picture>
-                <source width="255" height="180" srcset="#" type="image/webp">
-                <img class="slider__image" src="#" srcset="#" width="255" height="180" loading="lazy" alt="Сухая сломанная ветка">
+                <source width="226" height="120" srcset="images/slider-image-4@1x.webp, images/slider-image-4@2x.webp 2x" type="image/webp">
+                <img class="slider__image" src="images/slider-image-1@1x.png" srcset="images/slider-image-4@2x.png 2x" width="226" height="120" loading="lazy" alt="Сухая сломанная ветка">
               </picture>
             </a>
             <h3 class="slider__title">Fig. 4 (wood)</h3>
@@ -128,9 +128,12 @@
         <h2 class="blog__title">Новые артефакты</h2>
         <div class="blog__container">
           <picture>
-            <source width="825" height="493" srcset="#" type="image/webp">
-            <img class="blog__image" src="#" srcset="#" width="825" height="493" loading="lazy" alt="Коллаж с различными видами растений">
+            <source media="(min-width: 768px)" width="825" height="493" srcset="images/blog-image-tablet@1x.webp, images/blog-image-tablet@2x.webp 2x" type="image/webp">
+            <source width="255" height="493" srcset="images/blog-image-mobile@1x.webp, images/blog-image-tmobile@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" width="825" height="493" srcset="images/blog-image-tablet@1x.png, images/blog-image-tablet@2x.png 2x" type="image/png">
+            <img class="blog__image" src="images/blog-image-tablet@1x.png" srcset="blog-image-tablet@2x.png 2x" width="255" height="493" loading="lazy" alt="Коллаж с различными видами растений">
           </picture>
+          <a class="blog__container-button button" href="#">Swipe to see more</a>
           <div class="blog__description">
             <h3 class="blog__title-description">Kurische Nehrung 24</h3>
             <p class="blog__text">Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами.
