@@ -1,0 +1,31 @@
+.slider__mobile--inactive {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .slider__tablet--active {
+    display: block;
+  }
+
+  .slider__tablet--inactive {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .slider__desktop--active {
+    display: block;
+  }
+}

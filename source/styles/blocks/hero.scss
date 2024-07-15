@@ -1,0 +1,17 @@
+.hero {
+  background-color: #596668;
+}
+
+.hero__container {
+  padding: 29px 0 30px;
+}
+
+.hero__subtitle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__subtitle {
+    display: block;
+  }
+}
