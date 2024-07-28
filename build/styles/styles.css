@@ -231,7 +231,7 @@ img {
     text-decoration: none;
   }
 
-  .navigation__link-tablet--active {
+  .navigation__link-tablet-active {
     display: block;
   }
 }
