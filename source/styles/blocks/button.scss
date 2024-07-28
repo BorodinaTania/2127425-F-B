@@ -1,0 +1,65 @@
+.button {
+  display: block;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.79px;
+  text-decoration: none;
+  text-align: center;
+  // почему-то вместо иконки отображается черный квадрат;
+  // cursor: url("../../icons/cursor-light.svg"), auto;
+  cursor: pointer;
+  padding: 11.5px 26px;
+  word-wrap: break-word;
+  transition: background-color 0.4s ease-in, box-shadow 0.4s ease-in, outline 0.4s ease-in;
+  color: $button-color-green;
+  border: transparent;
+}
+
+.button--primary {
+  background-color: transparent;
+  font-weight: 400;
+  border: 1px solid $button-color-green;
+}
+
+.button--primary:hover {
+  background-color: $button-color-green;
+  color: $button-color-dark;
+}
+
+.button--primary:focus,
+.button--primary:focus-visible {
+  background-color: transparent;
+  color: $button-color-green;
+  outline: 1px solid $button-color-green-focus;
+  outline-offset: 2px;
+}
+
+.button--primary:active {
+  background-color: $button-color-green-active;
+  color: $button-color-dark;
+  outline: none;
+  border: 1px solid $button-color-green-active;
+}
+
+.button:disabled,
+.button--disabled {
+  background-color: $button-color-grey;
+  color: $button-color-grey;
+  pointer-events: none;
+}
+
+.button--tertiary {
+  color: $button-color-grey;
+}
+
+.button--quaternary {
+  color: $button-color-dark;
+}
+
+.button--fivefold {
+  color: $button-color-dark;
+  border: 1px solid $button-color-green;
+  background-color: $button-color-green;
+}
